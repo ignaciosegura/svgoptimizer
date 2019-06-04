@@ -22,6 +22,6 @@ npm run watch --input [input_folder] --output [output_folder] --settings [settin
 
 Default values are:
 
-Input folder: input
-Output folder: output
-Settings file: svg-optimize-default.json
+* Input folder: input
+* Output folder: output
+* Settings file: svg-optimize-default.json
