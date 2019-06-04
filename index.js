@@ -99,7 +99,11 @@ class SVGOptimizer {
       persistent: isWatch,
       interval: 2000,
       cwd: '.',
-      depth: 99
+      depth: 99,
+      awaitWriteFinish: {
+        stabilityThreshold: 3000,
+        pollInterval: 1000
+      }
     };
     let that = this;
 
