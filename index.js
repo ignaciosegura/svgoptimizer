@@ -98,7 +98,8 @@ class SVGOptimizer {
       ignored: /^\./,
       persistent: isWatch,
       interval: 2000,
-      cwd: '.'
+      cwd: '.',
+      depth: 99
     };
     let that = this;
 
