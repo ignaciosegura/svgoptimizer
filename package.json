@@ -1,0 +1,32 @@
+{
+  "name": "svgoptimizer",
+  "version": "1.0.0",
+  "description": "SVG files optimizer. Put anything on an INPUT folder and get it, optimized, in the OUTPUT folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "optimize": "node index.js",
+    "watch": "node index.js --watch",
+    "debug": "node --inspect-brk index.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignaciosegura/svgoptimizer.git"
+  },
+  "keywords": [
+    "svg",
+    "svgo",
+    "optimizer"
+  ],
+  "author": "Ignacio Segura (nacho@isegura.es)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ignaciosegura/svgoptimizer/issues"
+  },
+  "homepage": "https://github.com/ignaciosegura/svgoptimizer#readme",
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "svgo": "^1.2.2"
+  },
+  "devDependencies": {}
+}

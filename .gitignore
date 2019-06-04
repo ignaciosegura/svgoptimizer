@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# Work folders
+input/*
+output/*
+package-lock.json
