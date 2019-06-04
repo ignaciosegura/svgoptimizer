@@ -91,7 +91,7 @@ class SVGOptimizer {
             });
           }
 
-          fs.writeFile(outputFile, output, 'utf8', function (err) {
+          fs.writeFileSync(outputFile, output, 'utf8', function (err) {
             if (err) return console.log(err);
 
             console.log('File ' + outputFile + ' was saved');
