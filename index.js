@@ -77,12 +77,20 @@ class SVGOptimizer {
   optimizeFile (file) {
     let processor = this.SVGo;
     let outputFile = file.replace(this.config.inputFolder, this.config.outputFolder);
+    let targetDir = path.dirname(outputFile);
 
     fs.readFile(file, 'utf8', function (err, data) {
       if (err) throw err;
       processor.optimize(data, { path: file })
         .then(function (result) {
           let output = result.data;
+
+          if (!fs.existsSync(targetDir)) {
+            fs.mkdirSync(targetDir, { recursive: true }, (err) => {
+              if (err) throw err;
+            });
+          }
+
           fs.writeFile(outputFile, output, 'utf8', function (err) {
             if (err) return console.log(err);
 
