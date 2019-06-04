@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 // Node objects
 let path = require('path');
 let SVGO = require('svgo');
