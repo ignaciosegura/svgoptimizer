@@ -18,10 +18,14 @@ npm run watch -> Same as before, but it keeps watching the INPUT folder, so when
 
 ## Custom
 
-npm run watch --input [input_folder] --output [output_folder] --settings [settings_file]
+npm run watch -- --input [input_folder] --output [output_folder] --settings [settings_file]
 
 Default values are:
 
 * Input folder: input
 * Output folder: output
 * Settings file: svg-optimize-default.json
+
+## Example using custom folders
+
+npm run process -- --input test/in --output test/out --watch

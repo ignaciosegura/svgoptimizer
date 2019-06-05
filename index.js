@@ -28,7 +28,7 @@ class SVGOptimizer {
   getCmdArgumentValue (target) {
     let flagPos = this.findArgument('--' + target);
     return flagPos !== false
-      ? process.argv + 1
+      ? process.argv[flagPos + 1]
       : null;
   }
 
